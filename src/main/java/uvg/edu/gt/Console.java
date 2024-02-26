@@ -8,6 +8,7 @@ public class Console {
         System.out.println("Seleccione la implementacion que desea para la pila");
         System.out.println("1. ArrayList");
         System.out.println("2. Vector");
+        System.out.println("3. Lista");
         int option = scanner.nextInt();
         switch (option) {
             case 1:
