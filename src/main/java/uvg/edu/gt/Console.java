@@ -19,8 +19,6 @@ public class Console {
             default:
                 System.out.println("Esta opcion no existe, se usara la implementacion por defecto: ArrayList");
         }
-
-        Stack
     }
 
 }
