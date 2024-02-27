@@ -34,13 +34,19 @@ public class DoublyLinkedList<T> extends AbstractLinkedList<T> {
     @Override
     public T delete() {
         if (isEmpty()) throw new NoSuchElementException("La lista está vacía");
-        T deletedData = head.data;
-        head = head.next;
-        if (head != null) {
-            head.prev = null;
+        T deletedData = tail.data;
+        tail = tail.prev;
+        if (tail != null) {
+            tail.next = null;
         } else {
-            tail = null;
+            head = null;
         }
         return deletedData;
     }
+
+    public T peek() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'peek'");
+    }
+
 }

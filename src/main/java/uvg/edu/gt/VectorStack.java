@@ -16,9 +16,12 @@ public class VectorStack<T> implements Stack<T> {
 
     @Override
     public T pop() {
-        if(isEmpty()) throw new EmptyStackException();
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
         return stack.remove(stack.size() - 1);
     }
+
 
     @Override
     public T peek() {
