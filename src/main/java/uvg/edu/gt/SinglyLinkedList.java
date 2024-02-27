@@ -24,4 +24,9 @@ public class SinglyLinkedList<T> extends AbstractLinkedList<T> {
         head = head.next;
         return deletedData;
     }
+
+    public T peek() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'peek'");
+    }
 }
