@@ -1,4 +1,4 @@
-# 🚀 Calculadora Postfix
+# 🚀 Calculadora Infix-Postfix
 
 ¡Bienvenido a la Calculadora Infix a Postfix! Este programa evalúa expresiones en notación Infix y convertidas posteriormente postfix y produce resultados fascinantes. ✨
 
