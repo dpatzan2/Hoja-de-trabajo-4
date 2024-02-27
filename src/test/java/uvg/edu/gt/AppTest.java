@@ -1,38 +1,31 @@
 package uvg.edu.gt;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest {
+
+    @Test
+    public void testPushYPop() {
+        LinkedListStack<Integer> stack = new LinkedListStack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        assertEquals(Integer.valueOf(3), stack.pop());
+        assertEquals(Integer.valueOf(2), stack.pop());
+        assertEquals(Integer.valueOf(1), stack.pop());
+        assertTrue(stack.isEmpty());
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+    @Test
+    public void testPeek() {
+        LinkedListStack<String> stack = new LinkedListStack<>();
+        stack.push("Hola");
+        stack.push("Mundo");
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        assertEquals("Mundo", stack.peek());
+        assertEquals("Mundo", stack.peek()); // Peek no debe remover el elemento
+        assertFalse(stack.isEmpty());
     }
 }
