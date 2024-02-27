@@ -8,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Console.showMenu();
+        String filePath = "src/main/java/uvg/edu/gt/datos.txt";
+        Console.showMenu(filePath);
     }
 }
