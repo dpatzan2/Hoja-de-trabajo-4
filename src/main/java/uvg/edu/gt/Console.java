@@ -68,9 +68,9 @@ public class Console {
 
         switch (listChoice) {
             case 1:
-                return "SinglyLinkedList";
+                return "simple";
             case 2:
-                return "DoublyLinkedList";
+                return "doble";
             default:
                 System.out.println("Opción no válida. Se utilizará la lista simplemente encadenada por defecto.");
                 return "SinglyLinkedList";
