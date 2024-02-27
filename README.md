@@ -24,6 +24,10 @@ Este proyecto se ha desarrollado utilizando el JDK 17.0.7. Asegúrate de tener e
 
 4. **¡Listo para la Magia!**: Disfruta de la calculadora postfix en acción. Observa cómo las expresiones en "datos.txt" cobran vida y revelan resultados sorprendentes.
 
+
+### ⚙️ UML
+![Ejemplo de imagen](UML5.jpeg)
+
 ### 👨‍🦱 INTEGRANTES
 
 Ihan Gilberto Alexander Marroquín Sequén (23108)
