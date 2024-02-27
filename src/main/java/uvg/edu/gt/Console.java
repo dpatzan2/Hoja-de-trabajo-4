@@ -73,7 +73,7 @@ public class Console {
                 return "doble";
             default:
                 System.out.println("Opción no válida. Se utilizará la lista simplemente encadenada por defecto.");
-                return "SinglyLinkedList";
+                return "simple";
         }
     }
 
